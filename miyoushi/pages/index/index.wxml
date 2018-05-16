@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="content">
+  <!-- banner -->
+    <!-- <swiper indicator-dots="true"  indicator-color="#809ca0" indicator-active-color="#fff"
+    autoplay="true" interval="1500" duration="500" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>   -->
+  <!-- list -->
+  <view class="audio-list">
+    <view class="audio-item">
+     <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop bindtimeupdate="audioPress">
+      <view class="audio-left">
+          <view class="audio-img">
+               <image src="/assets/images/img2.png" mode="widthFix"/> 
+          </view>
+          <text>{{name}}</text>
+      </view>
+      <view class="audio-right">
+      
+          
+      
+        <text class="h6">用你的语言抓住学生</text>
+        <view class="play" bindtap="audioPlay" wx:if="{{true}}">
+            <image src="/assets/images/1.png" mode="widthFix"/>
+        </view>
+        <view class="play" bindtap="audioPause">
+            <image src="/assets/images/2.png" mode="widthFix" wx:if="{{false}}"/>
+        </view>
+        <progress percent="{{audioPress}}" stroke-width="1"/>
+      </view>
+      </audio> 
+    </view>
+  </view>
+</view>

@@ -1,0 +1,61 @@
+/**index.wxss**/
+page{
+  background: #f8f8f8;
+}
+.content{
+  width: 100%;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+}
+.content swiper{
+    width: 100%;
+}
+.content swiper image{
+    width: 100%;
+}
+.content .audio-list{
+  margin-top: 20rpx;
+}
+.content .audio-item{
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.audio-list .audio-item .audio-left{
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+}
+.audio-list .audio-item .audio-right{
+  width: 80%;
+  display: inline-block;
+}
+.audio-right .h6{
+  color: #999999;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.audio-img{
+  width: 100rpx;
+  height: 100rpx;
+  background: #eee;
+  text-align: center;
+  border-radius:50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.audio-img image{
+  width: 100%;
+}
+.audio-left text{
+  font-size: 22rpx;
+  color: #000000;
+}
+.audio-right .play{
+  width: 22rpx;
+}
+.audio-right .play image{
+  width: 22rpx;
+}
+progress{
+  background: #eee;
+}
